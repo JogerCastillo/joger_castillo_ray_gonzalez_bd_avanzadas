@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <xs:element name="empleados">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="empleado" type="TipoEmpleado" maxOccurs="unbounded"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:complexType name="TipoEmpleado">
+    <xs:sequence>
+      <xs:element name="nombre"               type="xs:string"/>
+      <xs:element name="apellido"             type="xs:string"/>
+      <xs:element name="email"                type="xs:string"/>
+      <xs:element name="telefono"             type="xs:string" minOccurs="0"/>
+      <xs:element name="fecha_contratacion"   type="xs:date"/>
+      <xs:element name="salario"              type="TipoSalario"/>
+      <xs:element name="departamento"         type="TipoDepartamento"/>
+      <xs:element name="cargo"                type="TipoCargo"/>
+    </xs:sequence>
+    <xs:attribute name="id" type="xs:positiveInteger" use="required"/>
+  </xs:complexType>
+
+  <xs:simpleType name="TipoSalario">
+    <xs:restriction base="xs:decimal">
+      <xs:minInclusive value="0"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:complexType name="TipoDepartamento">
+    <xs:sequence>
+      <xs:element name="id"     type="xs:positiveInteger"/>
+      <xs:element name="nombre" type="xs:string"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="TipoCargo">
+    <xs:sequence>
+      <xs:element name="id"     type="xs:string"/>
+      <xs:element name="titulo" type="xs:string"/>
+    </xs:sequence>
+  </xs:complexType>
+
+</xs:schema>

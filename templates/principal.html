@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Laboratorio XML - Joger Castillo</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='estilo.css') }}">
+</head>
+<body>
+    <nav>
+        <h2>Sistema de empleados - Base de datos XML</h2>
+        <ul>
+            <li><a href="/">Inicio</a></li>
+            <li><a href="/empleados">Ver empleados</a></li>
+            <li><a href="/departamentos">Departamentos</a></li>
+            <li><a href="/validar">Validar XML</a></li>
+            <li><a href="/xquery">Consultas XQuery</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h3>Bienvenido</h3>
+        <p>Esta aplicacion muestra los datos del archivo joger_castillo.xml, que contiene informacion de empleados, departamentos y cargos del esquema HR de Oracle.</p>
+        <p>Se incluyen ejemplos de validacion XSD y consultas XPath / XQuery.</p>
+    </main>
+    <footer>
+        <p>Laboratorio #1 - Almacenamiento y validacion de XML en Oracle (con Flask)</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,50 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #eef;
+}
+nav {
+    background: #336;
+    color: white;
+    padding: 10px;
+}
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+nav a {
+    color: white;
+    text-decoration: none;
+}
+main {
+    padding: 20px;
+    background: white;
+    margin: 20px;
+    border-radius: 5px;
+}
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+th, td {
+    border: 1px solid #aaa;
+    padding: 6px;
+}
+th {
+    background: #336;
+    color: white;
+}
+footer {
+    text-align: center;
+    font-size: 12px;
+    margin-top: 20px;
+}
+
+.verde {
+    color: green;
+}
+.rojo {
+    color: red;
+}

@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<empleados>
+
+  <empleado id="100">
+    <nombre>Steven</nombre>
+    <apellido>King</apellido>
+    <email>SKING</email>
+    <telefono>515.123.4567</telefono>
+    <fecha_contratacion>1987-06-17</fecha_contratacion>
+    <salario>24000</salario>
+    <departamento>
+      <id>90</id>
+      <nombre>Executive</nombre>
+    </departamento>
+    <cargo>
+      <id>AD_PRES</id>
+      <titulo>President</titulo>
+    </cargo>
+  </empleado>
+
+  <empleado id="101">
+    <nombre>Neena</nombre>
+    <apellido>Kochhar</apellido>
+    <email>NKOCHHAR</email>
+    <telefono>515.123.4568</telefono>
+    <fecha_contratacion>1989-09-21</fecha_contratacion>
+    <salario>17000</salario>
+    <departamento>
+      <id>90</id>
+      <nombre>Executive</nombre>
+    </departamento>
+    <cargo>
+      <id>AD_VP</id>
+      <titulo>Administration Vice President</titulo>
+    </cargo>
+  </empleado>
+
+  <empleado id="102">
+    <nombre>Lex</nombre>
+    <apellido>De Haan</apellido>
+    <email>LDEHAAN</email>
+    <telefono>515.123.4569</telefono>
+    <fecha_contratacion>1993-01-13</fecha_contratacion>
+    <salario>17000</salario>
+    <departamento>
+      <id>90</id>
+      <nombre>Executive</nombre>
+    </departamento>
+    <cargo>
+      <id>AD_VP</id>
+      <titulo>Administration Vice President</titulo>
+    </cargo>
+  </empleado>
+
+  <empleado id="103">
+    <nombre>Alexander</nombre>
+    <apellido>Hunold</apellido>
+    <email>AHUNOLD</email>
+    <telefono>590.423.4567</telefono>
+    <fecha_contratacion>1990-01-03</fecha_contratacion>
+    <salario>9000</salario>
+    <departamento>
+      <id>60</id>
+      <nombre>IT</nombre>
+    </departamento>
+    <cargo>
+      <id>IT_PROG</id>
+      <titulo>Programmer</titulo>
+    </cargo>
+  </empleado>
+
+  <empleado id="104">
+    <nombre>Bruce</nombre>
+    <apellido>Ernst</apellido>
+    <email>BERNST</email>
+    <telefono>590.423.4568</telefono>
+    <fecha_contratacion>1991-05-21</fecha_contratacion>
+    <salario>6000</salario>
+    <departamento>
+      <id>60</id>
+      <nombre>IT</nombre>
+    </departamento>
+    <cargo>
+      <id>IT_PROG</id>
+      <titulo>Programmer</titulo>
+    </cargo>
+  </empleado>
+
+  <empleado id="105">
+    <nombre>David</nombre>
+    <apellido>Austin</apellido>
+    <email>DAUSTIN</email>
+    <telefono>590.423.4569</telefono>
+    <fecha_contratacion>1997-06-25</fecha_contratacion>
+    <salario>4800</salario>
+    <departamento>
+      <id>60</id>
+      <nombre>IT</nombre>
+    </departamento>
+    <cargo>
+      <id>IT_PROG</id>
+      <titulo>Programmer</titulo>
+    </cargo>
+  </empleado>
+
+  <empleado id="149">
+    <nombre>Eleni</nombre>
+    <apellido>Zlotkey</apellido>
+    <email>EZLOTKEY</email>
+    <telefono>011.44.1344.429018</telefono>
+    <fecha_contratacion>2000-01-29</fecha_contratacion>
+    <salario>10500</salario>
+    <departamento>
+      <id>80</id>
+      <nombre>Sales</nombre>
+    </departamento>
+    <cargo>
+      <id>SA_MAN</id>
+      <titulo>Sales Manager</titulo>
+    </cargo>
+  </empleado>
+
+  <empleado id="174">
+    <nombre>Ellen</nombre>
+    <apellido>Abel</apellido>
+    <email>EABEL</email>
+    <telefono>011.44.1644.429267</telefono>
+    <fecha_contratacion>1996-05-11</fecha_contratacion>
+    <salario>11000</salario>
+    <departamento>
+      <id>80</id>
+      <nombre>Sales</nombre>
+    </departamento>
+    <cargo>
+      <id>SA_REP</id>
+      <titulo>Sales Representative</titulo>
+    </cargo>
+  </empleado>
+
+  <empleado id="124">
+    <nombre>Kevin</nombre>
+    <apellido>Mourgos</apellido>
+    <email>KMOURGOS</email>
+    <telefono>650.123.5234</telefono>
+    <fecha_contratacion>1999-11-16</fecha_contratacion>
+    <salario>5800</salario>
+    <departamento>
+      <id>50</id>
+      <nombre>Shipping</nombre>
+    </departamento>
+    <cargo>
+      <id>ST_MAN</id>
+      <titulo>Stock Manager</titulo>
+    </cargo>
+  </empleado>
+
+  <empleado id="141">
+    <nombre>Trena</nombre>
+    <apellido>Rajs</apellido>
+    <email>TRAJS</email>
+    <telefono>650.121.8009</telefono>
+    <fecha_contratacion>1995-10-17</fecha_contratacion>
+    <salario>3500</salario>
+    <departamento>
+      <id>50</id>
+      <nombre>Shipping</nombre>
+    </departamento>
+    <cargo>
+      <id>ST_CLERK</id>
+      <titulo>Stock Clerk</titulo>
+    </cargo>
+  </empleado>
+
+  <empleado id="200">
+    <nombre>Jennifer</nombre>
+    <apellido>Whalen</apellido>
+    <email>JWHALEN</email>
+    <telefono>515.123.4444</telefono>
+    <fecha_contratacion>1987-09-17</fecha_contratacion>
+    <salario>4400</salario>
+    <departamento>
+      <id>10</id>
+      <nombre>Administration</nombre>
+    </departamento>
+    <cargo>
+      <id>AD_ASST</id>
+      <titulo>Administration Assistant</titulo>
+    </cargo>
+  </empleado>
+
+</empleados>

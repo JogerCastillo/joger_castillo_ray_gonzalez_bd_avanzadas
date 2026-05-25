@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Validacion XSD</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='estilo.css') }}">
+</head>
+<body>
+    <nav>
+        <h2>Validacion XML vs XSD</h2>
+        <ul>
+            <li><a href="/">Inicio</a></li>
+            <li><a href="/empleados">Empleados</a></li>
+            <li><a href="/departamentos">Departamentos</a></li>
+            <li><a href="/validar">Validar XML</a></li>
+            <li><a href="/xquery">Consultas XQuery</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h3>Resultado de la validacion</h3>
+        <p class="{% if valido %}verde{% else %}rojo{% endif %}">
+            {{ mensaje }}
+        </p>
+        <p>Se validó el archivo joger_castillo_ray_gonzalez.xml con el esquema joger_castillo_ray_gonzalez.xsd usando la libreria lxml de Python.</p>
+    </main>
+</body>
+</html>

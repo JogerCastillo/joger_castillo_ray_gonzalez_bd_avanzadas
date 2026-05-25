@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Lista de empleados</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='estilo.css') }}">
+</head>
+<body>
+    <nav>
+        <h2>Sistema de empleados</h2>
+        <ul>
+            <li><a href="/">Inicio</a></li>
+            <li><a href="/empleados">Empleados</a></li>
+            <li><a href="/departamentos">Departamentos</a></li>
+            <li><a href="/validar">Validar XML</a></li>
+            <li><a href="/xquery">Consultas XQuery</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h3>Lista completa de empleados</h3>
+        <table border="1">
+            <tr>
+                <th>ID</th><th>Nombre</th><th>Apellido</th><th>Email</th><th>Telefono</th><th>Fecha contrato</th><th>Salario</th><th>Departamento</th><th>Cargo</th>
+            </tr>
+            {% for emp in empleados %}
+            <tr>
+                <td>{{ emp.id }}</td>
+                <td>{{ emp.nombre }}</td>
+                <td>{{ emp.apellido }}</td>
+                <td>{{ emp.email }}</td>
+                <td>{{ emp.telefono or '---' }}</td>
+                <td>{{ emp.fecha_contratacion }}</td>
+                <td>{{ emp.salario }}</td>
+                <td>{{ emp.departamento }}</td>
+                <td>{{ emp.cargo }}</td>
+            </tr>
+            {% endfor %}
+        </table>
+        <p>Total: {{ empleados|length }} empleados</p>
+    </main>
+</body>
+</html>

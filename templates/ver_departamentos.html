@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Departamentos</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='estilo.css') }}">
+</head>
+<body>
+    <nav>
+        <h2>Departamentos</h2>
+        <ul>
+            <li><a href="/">Inicio</a></li>
+            <li><a href="/empleados">Empleados</a></li>
+            <li><a href="/departamentos">Departamentos</a></li>
+            <li><a href="/validar">Validar XML</a></li>
+            <li><a href="/xquery">Consultas XQuery</a></li>
+        </ul>
+    </nav>
+    <main>
+        {% for depto in departamentos %}
+        <div style="margin-bottom: 25px;">
+            <h3>{{ depto.nombre }} (ID: {{ depto.id }})</h3>
+            <ul>
+                {% for emp in depto.empleados %}
+                <li>ID {{ emp.id }} - {{ emp.nombre }} {{ emp.apellido }}</li>
+                {% endfor %}
+            </ul>
+            <p>Cantidad: {{ depto.empleados|length }} empleados</p>
+        </div>
+        {% endfor %}
+    </main>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ejemplos XQuery</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='estilo.css') }}">
+</head>
+<body>
+    <nav>
+        <h2>Consultas XQuery ejecutadas</h2>
+        <ul>
+            <li><a href="/">Inicio</a></li>
+            <li><a href="/empleados">Empleados</a></li>
+            <li><a href="/departamentos">Departamentos</a></li>
+            <li><a href="/validar">Validar XML</a></li>
+            <li><a href="/xquery">Consultas XQuery</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h3>Empleados con salario mayor a 10000</h3>
+        <ul>
+            {% for emp in resultados.salario_alto %}
+            <li>{{ emp.nombre }} - {{ emp.salario }}</li>
+            {% endfor %}
+        </ul>
+
+        <h3>Empleados del departamento IT (id=60)</h3>
+        <ul>
+            {% for emp in resultados.it_empleados %}
+            <li>{{ emp.nombre }} ({{ emp.cargo }})</li>
+            {% endfor %}
+        </ul>
+
+        <h3>Empleados contratados antes de 1990</h3>
+        <ul>
+            {% for emp in resultados.antiguos %}
+            <li>{{ emp.nombre }} - {{ emp.fecha }}</li>
+            {% endfor %}
+        </ul>
+
+        <h3>Cantidad de empleados por departamento</h3>
+        <ul>
+            {% for depto, total in resultados.conteo_deptos.items() %}
+            <li>{{ depto }}: {{ total }} empleados</li>
+            {% endfor %}
+        </ul>
+    </main>
+</body>
+</html>
